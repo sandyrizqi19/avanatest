@@ -1,0 +1,16 @@
+{
+    "name": "sandyrizqi/validatorexcel",
+    "description": "validate excel",
+    "type": "project",
+    "authors": [
+        {
+            "name": "sandy",
+            "email": "sandyrizqi9@gmail.com"
+        }
+    ],"autoload": {
+        "psr-4": {
+            "Validator\\Validatorexcel\\": "src/"
+        }
+    },
+    "require": {}
+}

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ValidateExcel;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/validate',[ValidateExcel::class, 'index'])->name('validate');
+Route::get('/FormValidate',[ValidateExcel::class, 'validateForm'])->name('form');
+Route::post('/FormValidate',[ValidateExcel::class, 'validateForm'])->name('formValidate');
